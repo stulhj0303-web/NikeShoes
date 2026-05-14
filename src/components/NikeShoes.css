@@ -25,6 +25,7 @@
 
 .shoes-card:hover .shoes-img{
     transform: scale(1.05);
+    transition: 0.5s;
 }
 
 .hover-overlay{
@@ -65,6 +66,7 @@
 .shoes-state{
     color: rgb(228, 0, 0);
     font-weight: bold;
+    height: 28px;
 }
 
 .shoes-name{
