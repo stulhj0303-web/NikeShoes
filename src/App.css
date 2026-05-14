@@ -1,0 +1,323 @@
+.app-wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nike-header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.nike-header img{
+    border-radius: 0;
+    width: 98px;
+    height: 31px;
+    position: absolute;
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.top-nav{
+    position: absolute;
+    right: 22px;
+    line-height: 70px;
+    color: black;
+    font-weight: bold;
+    gap: 30px;
+    font-size: 15px;
+}
+
+.nav-item{
+    cursor: pointer;
+}
+
+.nav-item:hover{
+    color: #999;
+}
+
+.main-content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px 60px 20px;
+}
+
+.home-view{
+    width: 100%;
+    max-width: 1200px;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    background-color: #f7f7f7;
+    height: 50px;
+    line-height: 50px;
+}
+
+.shoes-grid{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.auth-container{
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.auth-title{
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.auth-input{
+    display: flex;
+    width: 300px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 1px solid #bdbdbd;
+    border-radius: 3px;
+    outline: none;
+}
+
+.auth-btn{
+    width: 332px;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.sign-up{
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.auth-signup{
+    margin-left: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    color: #555555;
+}
+
+.auth-signup:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.admin-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.admin-container h3{
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: black;
+    width: 100%;
+    background-color: #f7f7f7;
+    height: 50px;
+    line-height: 50px;
+    margin-top: -2px;
+}
+
+.admin-input-box{
+    margin: 0 auto;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-input-box input{
+    outline: none;
+}
+
+.admin-input-box1{
+    display: flex;
+    flex-direction: row;
+    width: 425px;
+    justify-content: space-between;
+}
+
+.admin-input-box1 input{
+    width: 175px;
+    padding: 13px 15px;
+    border: 1px solid #bdbdbd;
+    border-radius: 3px;
+}
+
+input.input-url {
+    width: 393px;
+    margin-top: 8px;
+    padding: 13px 15px;
+    border: 1px solid #bdbdbd;
+    border-radius: 3px;
+    margin-bottom: 8px;
+}
+
+.add-shoes-btn{
+    padding: 13px 15px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.admin-list-box{
+    width: 100%;
+}
+
+.admin-list-box1{
+    max-width: 800px;
+    margin: 0 auto;
+    border-top: 1px solid #eee;
+}
+
+.admin-list-box h3{
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 60px;
+    color: black;
+    margin-top: 40px;
+    width: 100%;
+    background-color: #f7f7f7;
+    height: 50px;
+    line-height: 50px;
+}
+
+.admin-list-item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.admin-list-item img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.admin-list-item span{
+    flex: 1;
+    color: #555;
+}
+
+.admin-list-item button{
+    padding: 5px 10px;
+    color: white;
+    background-color: rgb(241, 69, 69);
+    border: 1px solid rgb(241, 69, 69);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content{
+    background-color: white;
+    padding: 50px;
+    border-radius: 15px;
+    display: flex;
+    gap: 30px;
+    max-width: 700px;
+    position: relative;
+}
+
+@keyframes slideUp{
+    from {transform: translateY(50px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+.close-btn{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-color: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #999;
+}
+
+.modal-img{
+    width: 250px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.modal-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.modal-info h2{
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.modal-price{
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.modal-price.sale{
+    color: rgb(228, 0, 0);
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.buy-final-btn{
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
